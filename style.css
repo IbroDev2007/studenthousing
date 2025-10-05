@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none !important;
   list-style-type: none !important;
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
 }
 
 body.overlay {
