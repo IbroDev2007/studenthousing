@@ -481,6 +481,14 @@ footer .wrapper .icons i:hover {
 }
 
 footer .wrapper .tagline {
+  align-items: center;
   color: white;
   font-style: oblique;
+}
+
+@media (max-width: 768px) {
+  footer .wrapper {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
