@@ -80,7 +80,7 @@ nav .btn:hover {
 
 .mobileBtn {
   text-align: center;
-  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .mobileBtn .btn {
@@ -107,8 +107,8 @@ nav .btn:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* text-align: center; */
-    padding-top: 160px;
+    text-align: center;
+    padding: 160px 10px 0px 10px;
     transform: translateY(-100%);
     transition: 0.3s all ease;
   }
@@ -118,6 +118,8 @@ nav .btn:hover {
   }
 
   .mobile-menu ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 2em;
