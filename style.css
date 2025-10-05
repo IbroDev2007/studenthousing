@@ -260,7 +260,7 @@ nav .btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 6em;
   }
 }
@@ -434,7 +434,6 @@ nav .btn:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  text-align: center;
 }
 
 .trust .wrapper .cover i {
@@ -445,7 +444,6 @@ nav .btn:hover {
   .trust .wrapper .cover {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 2em;
   }
 }
