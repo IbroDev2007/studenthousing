@@ -53,13 +53,13 @@
     <div class="mobile-menu">
       <ul>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#home">HOME</a>
+          <a class="nav-link toggle" aria-current="page" href="#home">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT</a>
+          <a class="nav-link toggle2" href="#about">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
+          <a class="nav-link toggle3" href="#contact">CONTACT</a>
         </li>
       </ul>
       <div class="mobileBtn">
@@ -282,10 +282,28 @@
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-menu");
     const body = document.querySelector("body");
+    const toggler = document.querySelector(".toggle");
+    const toggler2 = document.querySelector(".toggle2");
+    const toggler3 = document.querySelector(".toggle3");
 
     hamburger.addEventListener("click", () => {
       mobileMenu.classList.toggle("show");
       body.classList.toggle("overlay");
+    });
+
+    toggler.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
+      body.classList.toggle("stop");
+    });
+
+    toggler2.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
+      body.classList.toggle("stop");
+    });
+
+    toggler3.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
+      body.classList.toggle("stop");
     });
   </script>
 </html>

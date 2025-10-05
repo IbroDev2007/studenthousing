@@ -13,6 +13,11 @@ body.overlay {
   height: 100vh;
 }
 
+body.stop {
+  overflow: visible;
+  height: auto;
+}
+
 header {
   padding: 10px;
   position: fixed;
@@ -80,6 +85,10 @@ nav .btn:hover {
   display: none;
 }
 
+.toggle {
+  text-decoration: none;
+}
+
 .mobileBtn {
   text-align: center;
   margin-top: 30px;
@@ -117,6 +126,10 @@ nav .btn:hover {
 
   .mobile-menu.show {
     transform: translateY(0);
+  }
+
+  .mobile-menu.hide {
+    transform: translateY(-150%);
   }
 
   .mobile-menu ul {
