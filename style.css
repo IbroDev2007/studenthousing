@@ -34,7 +34,6 @@ header {
 }
 
 nav {
-  background-color: #0f172a;
   /* border: 2px solid red; */
   max-width: 1300px;
   margin: auto;
@@ -42,13 +41,17 @@ nav {
   justify-content: space-between;
 }
 
-.navbar-nav {
+nav.lightmode .navbar-nav {
   gap: 0.5em;
 }
 
 .navbar-nav a {
   color: white;
   font-weight: 500;
+}
+
+.navbar-nav a:hover {
+  color: #e39c44;
 }
 
 nav .btn {
@@ -65,6 +68,16 @@ nav .btn:hover {
 .menuBtn {
   display: flex;
   gap: 1em;
+}
+
+.menuBtn .dropdown-menu {
+  background-color: #1f3b4d;
+  color: white;
+}
+
+.menuBtn .dropdown-menu .dropdown-item:hover {
+  color: black !important;
+  background-color: #e39c44;
 }
 
 .hamburger {
@@ -163,7 +176,7 @@ nav .btn:hover {
   margin-top: 60px;
   /* background-image: linear-gradient(135deg, #fff7f5, #fef2f2); */
   background-image: linear-gradient(135deg, #1f3b4d, #2e2e2e);
-  padding: 60px 10px 60px 10px;
+  padding: 80px 10px 60px 10px;
   overflow-x: hidden;
 }
 
@@ -179,7 +192,7 @@ nav .btn:hover {
   max-width: 600px;
   padding-right: 10px;
   transform: translateX(-115%);
-  transition: 1.3s ease all;
+  transition: 2s ease all;
   opacity: 0;
 }
 
@@ -219,7 +232,7 @@ nav .btn:hover {
   max-width: 600px;
   min-width: 0;
   transform: translateX(120%);
-  transition: 1.3s ease all;
+  transition: 2s ease all;
   opacity: 0;
 }
 
@@ -262,8 +275,10 @@ nav .btn:hover {
 
 .promise .wrapper .heading {
   text-align: center;
-  color: white;
-  border-bottom: #e39c44;
+  color: #e39c44;
+  border-bottom: 2px solid #e39c44;
+  /* border-bottom: #e39c44; */
+  padding-bottom: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -398,6 +413,11 @@ nav .btn:hover {
   background-color: #1f3b4d;
 }
 
+.built.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .built .wrapper {
   padding-top: 30px;
   max-width: 1300px;
@@ -470,6 +490,8 @@ nav .btn:hover {
 .contact .wrapper .formleft h1 {
   color: white;
   padding-bottom: 30px;
+  color: #e39c44;
+  font-weight: bold;
 }
 
 .contact .wrapper .formright {
@@ -514,7 +536,7 @@ nav .btn:hover {
 }
 
 .contact .wrapper form .btn:hover {
-  background-color: #e26b5c;
+  background-color: #e39c44;
 }
 
 @media (max-width: 993px) {
@@ -625,6 +647,10 @@ footer .wrapper ul {
 
 footer .wrapper ul li a {
   color: white;
+}
+
+footer .wrapper ul li a:hover {
+  color: #e39c44;
 }
 
 footer .wrapper .icons {

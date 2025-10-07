@@ -319,6 +319,8 @@
     const toggler = document.querySelector(".toggle");
     const toggler2 = document.querySelector(".toggle2");
     const toggler3 = document.querySelector(".toggle3");
+    const header = document.querySelector("header");
+    const lightMode = document.querySelector(".dropdown-item");
 
     hamburger.addEventListener("click", () => {
       mobileMenu.classList.toggle("show");
@@ -347,5 +349,19 @@
       heroLeft.classList.add("show");
       heroRight.classList.add("show");
     });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          // Stop observing once it’s shown (optional)
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    // Observe the about section
+    const builtSection = document.querySelector(".built");
+    observer.observe(builtSection);
   </script>
 </html>
